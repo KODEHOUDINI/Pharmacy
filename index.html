@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+    <title>RaphaCare Pharmacy</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdn.reflowhq.com/v1/toolkit.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600&amp;display=swap"
+    />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3"></div>
+        <div class="col-md-6"></div>
+        <div class="col-md-3"></div>
+      </div>
+    </div>
+    <nav class="navbar navbar-light navbar-expand-md">
+      <div class="container-fluid">
+        <button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1">
+          <span class="visually-hidden">Toggle navigation</span
+          ><span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navcol-1">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link active fs-6" href="#">HOME</a></li>
+            <li class="nav-item"><a class="nav-link fs-6" href="#">REGISTER</a></li>
+            <li class="nav-item"><a class="nav-link fs-6" href="#">Shopping cart</a></li>
+          </ul>
+          <a class="btn btn-primary ms-auto" role="button" href="/cart.html">CHECKOUT</a>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-2">
+          <div
+            data-reflow-type="category-list"
+            data-reflow-layout="horizontal-bar"
+            data-reflow-category-link="product.html?category={id}"
+          ></div>
+        </div>
+        <div class="col-md-10">
+          <section>
+            <div
+              data-bss-parallax-bg="true"
+              style="
+                height: 600px;
+                background-image: url(https://cdn.bootstrapstudio.io/placeholders/1400x800.png);
+                background-position: center;
+                background-size: cover;
+              "
+            >
+              <div class="container-fluid h-100">
+                <div class="row h-100">
+                  <div
+                    class="col-md-6 text-center text-md-start d-flex d-sm-flex d-md-flex justify-content-center align-items-center justify-content-md-start align-items-md-center justify-content-xl-center"
+                  >
+                    <div style="max-width: 350px">
+                      <h4 class="text-uppercase fw-bold">
+                        Biben dum<br />fringi dictum, augue purus
+                      </h4>
+                      <p class="my-3">
+                        Tincidunt laoreet leo, adipiscing taciti tempor. Primis senectus sapien,
+                        risus donec ad fusce augue interdum.
+                      </p>
+                      <a class="btn btn-primary btn-sm me-2" role="button" href="#">Button</a
+                      ><a class="btn btn-outline-primary btn-sm" role="button" href="#">Button</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <h1 class="fs-2" style="margin-bottom: 25px">Products</h1>
+          <div
+            data-reflow-type="product-list"
+            data-reflow-layout="cards"
+            data-reflow-order="date_desc"
+            data-reflow-product-link="/product.html?product={id}"
+          ></div>
+        </div>
+      </div>
+    </div>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdn.reflowhq.com/v1/toolkit.min.js" data-reflow-store="455847884"></script>
+    <script src="assets/js/bs-init.js"></script>
+    <script>
+      // document.body.innerText = document.body.innerText.replaceAll("$", "GH₡");
+    </script>
+  </body>
+</html>
