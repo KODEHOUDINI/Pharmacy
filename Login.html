@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="assets/css/styles.css" />
   </head>
 
-  <body style="background: #9ce1ef">
+  <body style="background: #9ce1ef; color: teal">
     <div class="container" style="margin-top: 70px">
       <div class="row" style="margin-top: 25px">
         <div class="col-md-12">
@@ -29,14 +29,14 @@
                       <div class="col-lg-6">
                         <div class="p-5">
                           <div class="mb-5">
-                            <h3 class="h4 font-weight-bold text-theme">Login</h3>
+                            <h3 class="h4 font-weight-bold" style="color: teal">Login</h3>
                           </div>
 
-                          <h6 class="h5 mb-0">Welcome back!</h6>
+                          <h6 class="h5 mb-0" style="color: teal">Welcome back!</h6>
                           <p class="text-muted mt-2 mb-5">Enter your email address and password.</p>
 
                           <form>
-                            <div class="form-group">
+                            <div class="form-group" style="color: teal">
                               <label for="exampleInputEmail1">Email address</label>
                               <input type="email" class="form-control" id="exampleInputEmail1" />
                             </div>
@@ -48,11 +48,17 @@
                                 id="exampleInputPassword1"
                               />
                             </div>
-                            <button type="submit" class="btn btn-theme">Login</button>
-                            <a href="#l" class="forgot-link float-right text-primary"
-                              >Forgot password?</a
-                            >
                           </form>
+                          <button
+                            class="btn"
+                            style="background-color: teal; color: #fff"
+                            id="sweetAl"
+                          >
+                            Login
+                          </button>
+                          <a href="#l" class="forgot-link float-right text-primary"
+                            >Forgot password?</a
+                          >
                         </div>
                       </div>
 
@@ -60,7 +66,7 @@
                         <div class="account-block rounded-right">
                           <div class="overlay rounded-right"></div>
                           <div class="account-testimonial mb-5">
-                            <h3 class="text-primary">RAPHACARE PHARMACY</h3>
+                            <h3 style="color: teal">RAPHACARE PHARMACY</h3>
                           </div>
                         </div>
                       </div>
@@ -86,5 +92,14 @@
     </div>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/bs-init.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+      document.getElementById("sweetAl").addEventListener("click", function () {
+        Swal.fire("Login Successful", "Enjoy your stay", "success");
+        setTimeout(function () {
+          open("./index.html", "_self");
+        }, 2000);
+      });
+    </script>
   </body>
 </html>
