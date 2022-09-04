@@ -5,3 +5,29 @@
 h1 {
   padding: 0.5em;
 }
+
+.ref-product {
+  background-color: rgb(177, 237, 249);
+  padding: 0.5em;
+  color: #fff;
+  border-radius: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ref-checkout-summary {
+  color: teal;
+}
+
+.ref-checkout-content {
+  color: teal;
+}
+
+.ref-image {
+  border-radius: 5%;
+}
+
+.reflow-shopping-cart {
+  color: #000;
+}
